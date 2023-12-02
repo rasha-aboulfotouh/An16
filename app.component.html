@@ -1,0 +1,55 @@
+<div style="text-align:center">
+
+  <pre></pre>
+
+
+  <h3> Interpolation Binding </h3>
+
+  <h5> Welcome to {{ topic }} </h5>
+
+
+  <pre></pre>
+
+
+
+  <h3>Property Binding </h3>
+
+  <img [src]="image" alt="" style="height: 200px; width: 350px" class="center">
+
+
+
+  <br>
+  <pre></pre>
+
+  <h3> Event Binding </h3>
+
+  <button (click)="onClick()">Subscribe </button>
+
+
+  <pre></pre>
+
+  <h3> Template reference</h3>
+  <h6> </h6>
+
+  <input #phone placeholder="phone number" />
+  <button type="button" (click)="callPhone(phone.value)"> call </button>
+
+  <pre></pre>
+
+  <input #myVar type="text" placeholder="data">
+  <button title="text" (click)="getdata(myVar.value)"> click </button>
+
+
+  <br>
+
+  <pre></pre>
+
+  <h3>Two-way Data Binding</h3>
+
+  <h5> {{name}} </h5>
+  <input [(ngModel)]="name" type="text"> <br>
+  
+  <pre></pre>
+
+
+</div>
