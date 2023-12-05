@@ -1,0 +1,94 @@
+<p>firstsibling works!</p>
+
+<h6> Number of Employees {{ employees.length }} </h6>
+
+
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let employee of employees"> 
+
+    {{ employee.name }}
+
+    
+    <!-- <button type="button" class="btn btn-dark"(click)="emplytransfer(employee)"> view </button>  -->
+    <button type="button" class="btn btn-danger"(click)="emplytransfer(employee)">Delete</button>
+    <button type="button" class="btn btn-info"(click)="emplytransfer(employee)">View</button>
+    <button type="button" class="btn btn-success"(click)="emplytransfer(employee)">Edit</button>
+  </li>
+</ul>
+
+<pre></pre>
+<pre></pre>
+
+<input #myvalue type="text" placeholder ="enter your employee"/>
+<br>
+<pre></pre>
+
+<!-- <button (click)="addempyee(myvalue.value)">Add employee </button> -->
+
+<button (click)="addempyee(myvalue.value)" type="button" class="btn btn-primary "> Add User </button> 
+
+
+<pre></pre>
+
+
+
+
+
+
+
+
+<!-- <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+
+        <th scope="col">#</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Muhammad</td>
+
+        <td>
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="button" class="btn btn-info">View</button>
+          <button type="button" class="btn btn-success">Edit</button>
+
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">2</th>
+        <td>Omar</td>
+
+        <td>
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="button" class="btn btn-info">View</button>
+          <button type="button" class="btn btn-success">Edit</button>
+
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">3</th>
+        <td>Othman</td>
+
+        <td>
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="button" class="btn btn-info"> View</button>
+          <button type="button" class="btn btn-success">Edit</button>
+
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <button type="button" class="btn btn-primary ">Add User</button> -->
+
+

@@ -48,8 +48,30 @@
 
   <h5> {{name}} </h5>
   <input [(ngModel)]="name" type="text"> <br>
-  
+
   <pre></pre>
 
 
 </div>
+
+<pre></pre>
+<br>
+
+
+
+
+
+<div class="container">
+  <h3>Employees </h3>
+  <div class="row">
+    <div class="col-lg-6"> <app-firstsibling (empltrans)= "recivedata($event)"></app-firstsibling> </div>
+    <div class="col-lg-6"> <app-secondsibling [empoyee] = "empyeeparent"> </app-secondsibling> </div>
+
+  </div>
+</div>
+
+
+<pre></pre>
+
+
+<app-products></app-products>

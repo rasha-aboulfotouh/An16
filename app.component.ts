@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { Employee } from './Employee';
+import { ProductsComponent } from './products/products.component';
+import { ProductData } from './product-data';
+
+import { ProductserviceService } from './productservice.service';
 
 @Component({
   selector: 'app-root',
@@ -35,5 +40,31 @@ export class AppComponent {
     this.title ="button clicked"
     console.log(parm);
   }
-  
+
+
+
+/*  Employees */
+
+  empyeeparent! :Employee;
+
+  recivedata(par:Employee){
+
+    this.empyeeparent = par;
+    console.log("parentdata"+par.name);
+
+  }
+  /* End Employees */
+
+
+
+  prod! :ProductData;
+  id!: 10;
+
+
+
+
+
+
+
+
 }
