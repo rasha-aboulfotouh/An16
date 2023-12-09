@@ -1,0 +1,23 @@
+
+
+li {
+    margin-bottom: 40px;
+}
+
+.card {
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+
+}
+
+.card-header {
+    background-color: bisque;
+}
+
+
+input {
+    margin-left: 20px;
+    margin-bottom: 60px;
+}

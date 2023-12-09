@@ -16,7 +16,7 @@ import { ProductsComponent } from './products/products.component';
     AppComponent,
     FirstsiblingComponent,
     SecondsiblingComponent,
-    ProductsComponent,
+    ProductsComponent
     
   
   ],
@@ -26,7 +26,7 @@ import { ProductsComponent } from './products/products.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    YouTubePlayerModule,
+    YouTubePlayerModule
    
     
 

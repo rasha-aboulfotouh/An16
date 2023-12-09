@@ -1,0 +1,44 @@
+<br>
+<h3> products component </h3>
+
+<br>
+
+<input #product  placeholder="enter your Product"/>
+
+<button (click)="add(product.value)"> Add </button>
+
+<section class="listing">
+
+  <ul>
+
+    <li *ngFor="let product of pordtdetailchild ">
+      <div class="card">          
+        <h6> {{ product.id }} </h6>
+
+        <div class="card-header">
+         <h4> {{ product.name }} </h4>
+        </div>
+
+        <div class="card-body">
+          <p> {{ product.price }} </p>
+        </div>
+
+        <button> view </button>
+
+
+      </div>
+    </li>
+ 
+  </ul>
+
+</section>
+
+
+<pre></pre>
+<pre></pre>
+
+<input #myvalue type="text" placeholder="enter your ProductData" />
+
+<button (click)="getdataeventfromuser(myvalue.value)">Add </button>
+
+<!-- <button (click)="(myvalue.value)"> Add </button> -->
