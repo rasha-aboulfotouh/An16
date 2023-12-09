@@ -1,3 +1,12 @@
+
+<!--products-->
+
+
+<app-products [pordtdetailchild]="productdetailsarraylist" (varoutput)="adding($event)" ></app-products>
+
+<!-- End  products -->
+
+
 <div style="text-align:center">
 
   <pre></pre>
@@ -41,7 +50,6 @@
 
 
   <br>
-
   <pre></pre>
 
   <h3>Two-way Data Binding</h3>
@@ -64,8 +72,8 @@
 <div class="container">
   <h3>Employees </h3>
   <div class="row">
-    <div class="col-lg-6"> <app-firstsibling (empltrans)= "recivedata($event)"></app-firstsibling> </div>
-    <div class="col-lg-6"> <app-secondsibling [empoyee] = "empyeeparent"> </app-secondsibling> </div>
+    <div class="col-lg-6"> <app-firstsibling (empltrans)="recivedata($event)" ></app-firstsibling> </div>
+    <div class="col-lg-6"> <app-secondsibling [empoyee]="empyeeparent" > </app-secondsibling> </div>
 
   </div>
 </div>
@@ -74,4 +82,3 @@
 <pre></pre>
 
 
-<app-products></app-products>

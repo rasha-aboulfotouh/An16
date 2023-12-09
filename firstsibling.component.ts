@@ -11,11 +11,12 @@ export class FirstsiblingComponent {
 
   @Output() empltrans : EventEmitter<Employee> = new EventEmitter<Employee>();
 
-  employees: Employee[] =[
-  
+  employees: Employee[] = [ { 
+    id : 1,
+    name : "Rasha",
+    city : "Egypt",
+  },
 
-
-    
   ]
 
   addempyee(par:any){
